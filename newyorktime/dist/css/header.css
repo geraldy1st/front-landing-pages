@@ -1,0 +1,11 @@
+#top-nav-header {
+  display: flex;
+  background-color: #ddd; }
+  #top-nav-header #top-nav-left {
+    flex: 1; }
+  #top-nav-header #top-nav-center {
+    flex: 3; }
+  #top-nav-header #top-nav-right {
+    flex: 1; }
+  #top-nav-header img {
+    width: 33px; }

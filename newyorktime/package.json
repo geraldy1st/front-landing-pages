@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "sass": "node-sass -w scss/main.scss -o dist/css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
