@@ -1,11 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond|Sarabun");
 #top-nav-header {
-  display: flex;
-  background-color: #ddd; }
+  display: flex; }
   #top-nav-header #top-nav-left {
-    flex: 1; }
+    flex: 1;
+    display: flex;
+    height: 40px;
+    padding: 3px; }
+    #top-nav-header #top-nav-left #top-hamburger-nav {
+      display: flex;
+      width: 35px;
+      height: 35px;
+      transition: 0.5s ease-out;
+      margin-right: 5px; }
+    #top-nav-header #top-nav-left #top-hamburger-nav:hover {
+      background-color: #eee; }
+    #top-nav-header #top-nav-left #search-icon-nav {
+      display: flex;
+      width: 35px;
+      height: 35px;
+      background-color: #eee; }
+    #top-nav-header #top-nav-left #search-input-nav {
+      flex: 2;
+      display: flex; }
+      #top-nav-header #top-nav-left #search-input-nav input {
+        padding: 5px;
+        margin: auto 5px;
+        border-radius: 2px;
+        border: 1px solid #eee; }
+      #top-nav-header #top-nav-left #search-input-nav button {
+        padding: 5px;
+        width: 33px;
+        height: 33px;
+        border-radius: 2px;
+        border: 1px solid #eee;
+        color: #fff;
+        background-color: #3f688e;
+        font-weight: bold; }
+    #top-nav-header #top-nav-left img {
+      width: 20px;
+      margin: auto; }
   #top-nav-header #top-nav-center {
-    flex: 3; }
+    flex: 3;
+    display: flex;
+    justify-content: center; }
+    #top-nav-header #top-nav-center li {
+      margin: auto 5px;
+      font-size: 0.7em;
+      padding: 5px;
+      text-transform: uppercase;
+      text-align: center;
+      cursor: pointer; }
+    #top-nav-header #top-nav-center li:hover {
+      background-color: #e7e7e7; }
   #top-nav-header #top-nav-right {
-    flex: 1; }
+    flex: 1;
+    display: flex;
+    justify-content: flex-end; }
+    #top-nav-header #top-nav-right a {
+      background-color: #3f688e;
+      border: 1px solid #222283;
+      color: #fff;
+      text-decoration: none;
+      align-items: flex-end;
+      margin: auto 10px 0 0;
+      padding: 4px 15px;
+      border-radius: 4px;
+      font-weight: bold;
+      font-size: 0.65em; }
   #top-nav-header img {
     width: 33px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box; }
+
+html {
+  font-family: "EB Garamond", serif; }
+
+nav {
+  font-family: "Sarabun", sans-serif; }

@@ -1,1 +1,14 @@
 @import "./header.scss";
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond|Sarabun");
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
+html {
+  font-family: "EB Garamond", serif;
+}
+nav {
+  font-family: "Sarabun", sans-serif;
+}
