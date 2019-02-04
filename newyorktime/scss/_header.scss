@@ -61,6 +61,7 @@ $color-blue: "#3F688E";
       text-transform: uppercase;
       text-align: center;
       cursor: pointer;
+      transition: 0.5s ease-out;
     }
     li:hover {
       background-color: #e7e7e7;
