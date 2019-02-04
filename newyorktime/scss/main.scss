@@ -1,4 +1,8 @@
-@import "./header.scss";
+@import "header";
+// Colors
+$color-blue: "#3F688E";
+
+// Font
 @import url("https://fonts.googleapis.com/css?family=EB+Garamond|Sarabun");
 * {
   margin: 0;

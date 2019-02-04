@@ -23,7 +23,8 @@
       flex: 2;
       display: flex; }
       #top-nav-header #top-nav-left #search-input-nav input {
-        padding: 5px;
+        height: 35px;
+        padding-left: 15px;
         margin: auto 5px;
         border-radius: 2px;
         border: 1px solid #eee; }
@@ -61,14 +62,20 @@
       border: 1px solid #222283;
       color: #fff;
       text-decoration: none;
-      align-items: flex-end;
+      text-align: center;
+      min-width: 120px;
       margin: auto 10px 0 0;
-      padding: 4px 15px;
+      padding: 5px 15px;
       border-radius: 4px;
       font-weight: bold;
       font-size: 0.65em; }
   #top-nav-header img {
     width: 33px; }
+
+#title-header {
+  display: flex; }
+  #title-header span {
+    align-self: flex-end; }
 
 * {
   margin: 0;
