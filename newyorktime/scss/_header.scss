@@ -1,3 +1,5 @@
+@import "./variables";
+
 $color-blue: "#3F688E";
 
 #top-nav-header {
@@ -15,13 +17,13 @@ $color-blue: "#3F688E";
       margin-right: 5px;
     }
     #top-hamburger-nav:hover {
-      background-color: #eee;
+      background-color: $light-gray;
     }
     #search-icon-nav {
       display: flex;
       width: 35px;
       height: 35px;
-      background-color: #eee;
+      background-color: $light-gray;
     }
     #search-input-nav {
       flex: 2;
@@ -32,16 +34,16 @@ $color-blue: "#3F688E";
         padding-left: 15px;
         margin: auto 5px;
         border-radius: 2px;
-        border: 1px solid #eee;
+        border: 1px solid $light-gray;
       }
       button {
         padding: 5px;
         width: 33px;
         height: 33px;
         border-radius: 2px;
-        border: 1px solid #eee;
+        border: 1px solid $light-gray;
         color: #fff;
-        background-color: #3f688e;
+        background-color: $btn-color;
         font-weight: bold;
       }
     }
@@ -72,7 +74,7 @@ $color-blue: "#3F688E";
     display: flex;
     justify-content: flex-end;
     a {
-      background-color: #3f688e;
+      background-color: $btn-color;
       border: 1px solid #222283;
       color: #fff;
       text-decoration: none;
