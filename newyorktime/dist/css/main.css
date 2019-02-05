@@ -10,18 +10,19 @@
       display: flex;
       width: 35px;
       height: 35px;
-      transition: 0.5s ease-out;
       margin-right: 5px; }
-    #top-nav-header #top-nav-left #top-hamburger-nav:hover {
-      background-color: #eee; }
+    #top-nav-header #top-nav-left #top-hamburger-nav:hover,
+    #top-nav-header #top-nav-left #search-icon-nav:hover {
+      background-color: #eee;
+      transition: 0.5s ease-out; }
     #top-nav-header #top-nav-left #search-icon-nav {
       display: flex;
       width: 35px;
-      height: 35px;
-      background-color: #eee; }
+      height: 35px; }
     #top-nav-header #top-nav-left #search-input-nav {
       flex: 2;
-      display: flex; }
+      display: flex;
+      visibility: hidden; }
       #top-nav-header #top-nav-left #search-input-nav input {
         height: 35px;
         padding-left: 15px;
@@ -74,9 +75,28 @@
     width: 33px; }
 
 #title-header {
-  display: flex; }
+  display: flex;
+  border-bottom: 1px solid #eee; }
   #title-header span {
-    align-self: flex-end; }
+    align-self: flex-end;
+    padding: 5px; }
+  #title-header #date-nav {
+    flex: 1; }
+  #title-header #logo-nav {
+    flex: 1; }
+  #title-header #today-nav {
+    flex: 1;
+    text-align: end; }
+
+#category-nav {
+  border-bottom: 1px solid #111;
+  padding: 10px 20px; }
+  #category-nav ul {
+    display: flex;
+    justify-content: space-between; }
+    #category-nav ul li {
+      font-size: 0.8em;
+      font-family: "Sarabun", sans-serif; }
 
 * {
   margin: 0;

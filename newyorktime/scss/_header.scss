@@ -1,7 +1,5 @@
 @import "./variables";
 
-$color-blue: "#3F688E";
-
 #top-nav-header {
   display: flex;
   #top-nav-left {
@@ -13,22 +11,22 @@ $color-blue: "#3F688E";
       display: flex;
       width: 35px;
       height: 35px;
-      transition: 0.5s ease-out;
       margin-right: 5px;
     }
-    #top-hamburger-nav:hover {
+    #top-hamburger-nav:hover,
+    #search-icon-nav:hover {
       background-color: $light-gray;
+      transition: 0.5s ease-out;
     }
     #search-icon-nav {
       display: flex;
       width: 35px;
       height: 35px;
-      background-color: $light-gray;
     }
     #search-input-nav {
       flex: 2;
       display: flex;
-
+      visibility: hidden;
       input {
         height: 35px;
         padding-left: 15px;
@@ -93,7 +91,33 @@ $color-blue: "#3F688E";
 }
 #title-header {
   display: flex;
+  border-bottom: 1px solid #eee;
   span {
     align-self: flex-end;
+    padding: 5px;
+  }
+  #date-nav {
+    flex: 1;
+  }
+  #logo-nav {
+    flex: 1;
+  }
+  #today-nav {
+    flex: 1;
+    text-align: end;
+  }
+}
+
+#category-nav {
+  border-bottom: 1px solid #111;
+  padding: 10px 20px;
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+    li {
+      font-size: 0.8em;
+      font-family: "Sarabun", sans-serif;
+    }
   }
 }
