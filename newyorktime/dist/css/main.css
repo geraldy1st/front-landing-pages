@@ -6,19 +6,16 @@
     display: flex;
     height: 40px;
     padding: 3px; }
-    #top-nav-header #top-nav-left #top-hamburger-nav {
+    #top-nav-header #top-nav-left #top-hamburger-nav,
+    #top-nav-header #top-nav-left #search-icon-nav {
       display: flex;
       width: 35px;
       height: 35px;
-      margin-right: 5px; }
+      margin-left: 5px; }
     #top-nav-header #top-nav-left #top-hamburger-nav:hover,
     #top-nav-header #top-nav-left #search-icon-nav:hover {
       background-color: #eee;
       transition: 0.5s ease-out; }
-    #top-nav-header #top-nav-left #search-icon-nav {
-      display: flex;
-      width: 35px;
-      height: 35px; }
     #top-nav-header #top-nav-left #search-input-nav {
       flex: 2;
       display: flex;
@@ -54,7 +51,8 @@
       cursor: pointer;
       transition: 0.5s ease-out; }
     #top-nav-header #top-nav-center li:hover {
-      background-color: #e7e7e7; }
+      background-color: #eee;
+      transition: 0.5s ease-out; }
   #top-nav-header #top-nav-right {
     flex: 1;
     display: flex;
@@ -97,6 +95,37 @@
     #category-nav ul li {
       font-size: 0.8em;
       font-family: "Sarabun", sans-serif; }
+
+#flash-info-header {
+  border-bottom: 1px solid #111;
+  margin-top: 12px; }
+  #flash-info-header ul {
+    display: flex; }
+    #flash-info-header ul li {
+      display: flex;
+      flex: 1; }
+      #flash-info-header ul li .box1 {
+        flex: 1; }
+      #flash-info-header ul li .box2 {
+        flex: 3; }
+  #flash-info-header #flash-info-dynamic {
+    display: flex;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif; }
+    #flash-info-header #flash-info-dynamic div {
+      flex: 1;
+      margin: auto; }
+      #flash-info-header #flash-info-dynamic div ul {
+        flex-direction: column; }
+        #flash-info-header #flash-info-dynamic div ul li {
+          border-bottom: 1px solid #ddd;
+          width: 100%;
+          margin: 0.3em; }
+          #flash-info-header #flash-info-dynamic div ul li span {
+            color: green;
+            text-align: right; }
+        #flash-info-header #flash-info-dynamic div ul li:last-child {
+          border: none; }
 
 * {
   margin: 0;

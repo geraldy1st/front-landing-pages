@@ -1,2 +1,9 @@
+// Colors
 $light-gray: #eee;
 $btn-color: #3f688e;
+
+// mixing
+@mixin ease-out {
+  background-color: $light-gray;
+  transition: 0.5s ease-out;
+}

@@ -7,21 +7,16 @@
     display: flex;
     height: 40px;
     padding: 3px;
-    #top-hamburger-nav {
-      display: flex;
-      width: 35px;
-      height: 35px;
-      margin-right: 5px;
-    }
-    #top-hamburger-nav:hover,
-    #search-icon-nav:hover {
-      background-color: $light-gray;
-      transition: 0.5s ease-out;
-    }
+    #top-hamburger-nav,
     #search-icon-nav {
       display: flex;
       width: 35px;
       height: 35px;
+      margin-left: 5px;
+    }
+    #top-hamburger-nav:hover,
+    #search-icon-nav:hover {
+      @include ease-out;
     }
     #search-input-nav {
       flex: 2;
@@ -64,7 +59,7 @@
       transition: 0.5s ease-out;
     }
     li:hover {
-      background-color: #e7e7e7;
+      @include ease-out;
     }
   }
   #top-nav-right {
@@ -118,6 +113,49 @@
     li {
       font-size: 0.8em;
       font-family: "Sarabun", sans-serif;
+    }
+  }
+}
+// Flash info header
+#flash-info-header {
+  border-bottom: 1px solid #111;
+  margin-top: 12px;
+  ul {
+    display: flex;
+    li {
+      display: flex;
+      flex: 1;
+      .box1 {
+        flex: 1;
+      }
+      .box2 {
+        flex: 3;
+      }
+    }
+  }
+  #flash-info-dynamic {
+    display: flex;
+    font-size: 0.8em;
+    font-family: Arial, Helvetica, sans-serif;
+    div {
+      flex: 1;
+      margin: auto;
+      ul {
+        flex-direction: column;
+        li {
+          border-bottom: 1px solid #ddd;
+          width: 100%;
+          margin: 0.3em;
+
+          span {
+            color: green;
+            text-align: right;
+          }
+        }
+        li:last-child {
+          border: none;
+        }
+      }
     }
   }
 }
