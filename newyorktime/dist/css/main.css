@@ -33,7 +33,7 @@
         border-radius: 2px;
         border: 1px solid #eee;
         color: #fff;
-        background-color: #3f688e;
+        background-color: #386C94;
         font-weight: bold; }
     #top-nav-header #top-nav-left img {
       width: 20px;
@@ -60,7 +60,7 @@
     display: flex;
     justify-content: flex-end; }
     #top-nav-header #top-nav-right a {
-      background-color: #3f688e;
+      background-color: #386C94;
       border: 1px solid #222283;
       color: #fff;
       text-decoration: none;
@@ -116,20 +116,15 @@
       align-items: center; }
       #flash-info-header ul li::after {
         content: '';
-        border-left: 1.4px solid #dbd8d8;
+        border-left: 1.4px solid #c0c0c0bb;
         height: 93%;
         width: 0px;
         margin-right: 12px; }
-      #flash-info-header ul li:last-child::before {
-        content: "";
-        transform: translateX(12vw);
-        border-left: 1.4px solid #dbd8d8;
-        height: 93%;
-        width: 0px; }
       #flash-info-header ul li:last-child::after {
         display: none; }
       #flash-info-header ul li .box1 {
-        flex: 1; }
+        flex: 1;
+        margin-right: 5px; }
       #flash-info-header ul li .box2 {
         flex: 3; }
   #flash-info-header #flash-info-dynamic {
@@ -138,16 +133,21 @@
     font-family: Arial, Helvetica, sans-serif;
     justify-content: space-around; }
     #flash-info-header #flash-info-dynamic #stocks-wrapper {
-      width: 45%;
-      margin: auto;
-      padding: 3px; }
+      width: 50%;
+      margin: auto; }
       #flash-info-header #flash-info-dynamic #stocks-wrapper .stock-line {
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        max-height: 20px;
+        padding: 1px;
+        border-bottom: 1.4px solid #c0c0c0bb; }
       #flash-info-header #flash-info-dynamic #stocks-wrapper span.stock-values {
         color: green; }
+    #flash-info-header #flash-info-dynamic .vertical-separator {
+      margin-left: 10px; }
     #flash-info-header #flash-info-dynamic #weather-wrapper {
-      width: 45%;
+      width: 50%;
       display: flex;
       flex-direction: column;
       justify-content: space-around;
@@ -169,4 +169,10 @@ nav {
 
 body {
   margin: auto;
-  width: 95%; }
+  width: 95%;
+  min-width: 900px; }
+
+.vertical-separator {
+  border-left: 1.4px solid #c0c0c0bb;
+  height: 93%;
+  width: 0px; }

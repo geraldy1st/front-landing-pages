@@ -1,6 +1,7 @@
 // Colors
 $light-gray: #eee;
-$btn-color: #3f688e;
+$btn-color: #386C94;
+$separator-color: #c0c0c0bb;
 
 
 // mixins
@@ -11,14 +12,14 @@ $btn-color: #3f688e;
 
 
 @mixin vertical-separator{
-  border-left: 1.4px solid #dbd8d8;
+  border-left: 1.4px solid $separator-color;
   height: 93%;
   width:0px;
 }
 
 
 @mixin horizontal-separator{
-  border-left: 1.4px solid #dbd8d8;
+  border-left: 1.4px solid $separator-color;
   height:0px;
   width: 90%;
 }

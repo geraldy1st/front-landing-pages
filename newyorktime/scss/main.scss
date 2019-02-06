@@ -18,4 +18,9 @@ nav {
 body{
   margin: auto;
   width: 95%;
+  min-width: 900px;
+}
+
+.vertical-separator{
+  @include vertical-separator;
 }

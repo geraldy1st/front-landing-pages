@@ -140,7 +140,7 @@
       display: flex;
       flex: 1;
       align-items: center;
-      
+     
       &::after{   // gray separator elt
       content:'';
       @include vertical-separator; 
@@ -148,11 +148,6 @@
       }
       &:last-child{ // hide unwanted separator after #flash-info-header div
 
-        &::before{ // separator inside of #flash-info-dynamic, quickfix, bad solution
-         content: "";
-          transform: translateX(12vw); 
-          @include vertical-separator;
-        }
         &::after{ 
           display: none;
         }
@@ -160,6 +155,7 @@
 
       .box1 {
         flex: 1;
+        margin-right: 5px;
       }
       .box2 {
         flex: 3;
@@ -173,13 +169,17 @@
     justify-content: space-around;
 
     #stocks-wrapper {
-      width: 45%; // same value as #weather-wrapper, allows for 5% margin in between the two
+      width: 50%; // same value as #weather-wrapper, allows for 5% margin in between the two
       margin: auto;
-      padding: 3px;
+  
   
       .stock-line{
         display: flex;
         justify-content: space-between;
+        flex-wrap: nowrap;
+        max-height: 20px;
+        padding: 1px;
+        border-bottom : 1.4px solid $separator-color;
        }
        
       
@@ -187,9 +187,12 @@
           color: green;           
           }
       }
-    
+      .vertical-separator{
+        margin-left: 10px;
+      }
+
         #weather-wrapper{
-          width: 45%;
+          width: 50%;
           display:flex;
           flex-direction: column;
           justify-content: space-around;
@@ -202,4 +205,6 @@
         }
       }
     }
+
+    
 
