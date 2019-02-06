@@ -49,6 +49,7 @@
     flex: 3;
     display: flex;
     justify-content: center;
+    
     li {
       margin: auto 5px;
       font-size: 0.7em;
@@ -57,11 +58,16 @@
       text-align: center;
       cursor: pointer;
       transition: 0.5s ease-out;
+      &:first-child{
+        font-weight: 600;
+      }
     }
+   
     li:hover {
       @include ease-out;
     }
   }
+
   #top-nav-right {
     flex: 1;
     display: flex;
@@ -105,9 +111,11 @@
 
 #category-nav {
   border-bottom: 1px solid #111;
-  padding: 10px 20px;
-
+  align-items: center;
+  justify-content:center;
+  padding: 10px 5vw;
   ul {
+   
     display: flex;
     justify-content: space-between;
     li {
@@ -118,13 +126,38 @@
 }
 // Flash info header
 #flash-info-header {
+  height: 80px;
   border-bottom: 1px solid #111;
-  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   ul {
+    width: 95%;
+    height: 90%;
     display: flex;
     li {
       display: flex;
       flex: 1;
+      align-items: center;
+      
+      &::after{   // gray separator elt
+      content:'';
+      @include vertical-separator; 
+      margin-right: 12px;
+      }
+      &:last-child{ // hide unwanted separator after #flash-info-header div
+
+        &::before{ // separator inside of #flash-info-dynamic, quickfix, bad solution
+         content: "";
+          transform: translateX(12vw); 
+          @include vertical-separator;
+        }
+        &::after{ 
+          display: none;
+        }
+      }
+
       .box1 {
         flex: 1;
       }
@@ -133,29 +166,40 @@
       }
     }
   }
-  #flash-info-dynamic {
+  #flash-info-dynamic { 
     display: flex;
     font-size: 0.8em;
     font-family: Arial, Helvetica, sans-serif;
-    div {
-      flex: 1;
-      margin: auto;
-      ul {
-        flex-direction: column;
-        li {
-          border-bottom: 1px solid #ddd;
-          width: 100%;
-          margin: 0.3em;
+    justify-content: space-around;
 
-          span {
-            color: green;
-            text-align: right;
+    #stocks-wrapper {
+      width: 45%; // same value as #weather-wrapper, allows for 5% margin in between the two
+      margin: auto;
+      padding: 3px;
+  
+      .stock-line{
+        display: flex;
+        justify-content: space-between;
+       }
+       
+      
+      span.stock-values{
+          color: green;           
           }
+      }
+    
+        #weather-wrapper{
+          width: 45%;
+          display:flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+           
+          // margin-left: 5%;
         }
         li:last-child {
           border: none;
         }
       }
     }
-  }
-}
+

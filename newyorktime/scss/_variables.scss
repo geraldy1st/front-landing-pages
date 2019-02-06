@@ -2,8 +2,23 @@
 $light-gray: #eee;
 $btn-color: #3f688e;
 
-// mixing
+
+// mixins
 @mixin ease-out {
   background-color: $light-gray;
   transition: 0.5s ease-out;
+}
+
+
+@mixin vertical-separator{
+  border-left: 1.4px solid #dbd8d8;
+  height: 93%;
+  width:0px;
+}
+
+
+@mixin horizontal-separator{
+  border-left: 1.4px solid #dbd8d8;
+  height:0px;
+  width: 90%;
 }
