@@ -155,6 +155,11 @@
     #flash-info-header #flash-info-dynamic li:last-child {
       border: none; }
 
+.vertical-separator {
+  border-left: 1.4px solid #c0c0c0bb;
+  height: 93%;
+  width: 0px; }
+
 * {
   margin: 0;
   padding: 0;
@@ -171,8 +176,3 @@ body {
   margin: auto;
   width: 95%;
   min-width: 900px; }
-
-.vertical-separator {
-  border-left: 1.4px solid #c0c0c0bb;
-  height: 93%;
-  width: 0px; }
