@@ -176,3 +176,8 @@ body {
   margin: auto;
   width: 95%;
   min-width: 900px; }
+
+#side-content {
+  background-color: #a5a5a5;
+  width: 310px;
+  height: 110px; }

@@ -1,111 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>New York Time</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <link rel="stylesheet" href="css/main.css" />
-  <title>New York Time</title>
-</head>
+  <body>
+    <header>
+      <nav id="top-nav-header">
+        <div id="top-nav-left">
+          <a id="top-hamburger-nav" href="#"
+            ><img src="./img/hamb.svg" alt=""
+          /></a>
+          <a id="search-icon-nav" href="#"
+            ><img src="./img/search.svg" alt=""
+          /></a>
+          <div id="search-input-nav">
+            <input type="text" placeholder="SEARCH" />
+            <button>GO</button>
+          </div>
+        </div>
+        <ul id="top-nav-center">
+          <li>English</li>
+          <li>Español</li>
+          <li>中文</li>
+        </ul>
+        <div id="top-nav-right">
+          <a href="" id="subscribe">SUBSCRIBE NOW</a>
+          <a href="" id="login">LOG IN</a>
+        </div>
+      </nav>
+      <div id="title-header">
+        <span id="date-nav">Sunday, February 3rd, 2019</span>
+        <img id="logo-nav" src="img/nyt-logo.png" alt="" />
+        <span id="today-nav">Today's paper</span>
+      </div>
+      <div id="category-nav">
+        <ul>
+          <li>World</li>
+          <li>U.S.</li>
+          <li>Politics</li>
+          <li>N.Y.</li>
+          <li>Business</li>
+          <li>Opinion</li>
+          <li>Tech</li>
+          <li>Science</li>
+          <li>Health</li>
+          <li>Sports</li>
+          <li>Arts</li>
+          <li>Books</li>
+          <li>Style</li>
+          <li>Food</li>
+          <li>Travel</li>
+          <li>Magazine</li>
+          <li>T Magazine</li>
+          <li>Real Estate</li>
+          <li>Video</li>
+        </ul>
+      </div>
+      <div id="flash-info-header">
+        <ul>
+          <li>
+            <div class="box1">
+              <img src="http://placehold.jp/55x55.png" alt="" />
+            </div>
+            <div class="box2">
+              <h5>titre1</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
+          <li>
+            <div class="box1">
+              <img src="http://placehold.jp/55x55.png" alt="" />
+            </div>
+            <div class="box2">
+              <h5>titre1</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
+          <li>
+            <div class="box1">
+              <img src="http://placehold.jp/55x55.png" alt="" />
+            </div>
+            <div class="box2">
+              <h5>titre1</h5>
+              <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+          </li>
 
-<body>
-  <header>
-    <nav id="top-nav-header">
-      <div id="top-nav-left">
-        <a id="top-hamburger-nav" href="#"><img src="./img/hamb.svg" alt="" /></a>
-        <a id="search-icon-nav" href="#"><img src="./img/search.svg" alt="" /></a>
-        <div id="search-input-nav">
-          <input type="text" placeholder="SEARCH" />
-          <button>GO</button>
+          <li id="flash-info-dynamic">
+            <div id="stocks-wrapper">
+              <div class="stock-line">
+                S&P 500<span class="stock-values">-0.47% &#8595;</span>
+              </div>
+              <div class="stock-line">
+                Dow <span class="stock-values">+0.68% &#8593;</span>
+              </div>
+              <div class="stock-line">
+                Nasdaq <span class="stock-values">+0.74% &#8593;</span>
+              </div>
+            </div>
+            <!-- separator -->
+            <span class="vertical-separator"></span>
+            <div id="weather-wrapper">
+              <img src="http://placehold.jp/80x35.png" alt="" />
+              <p>Paris, France</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="main-content">
+      <div class="main-news">
+        <div class="main-article">
+          <h5>POLITICS</h5>
+          <h2>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sequi, ea!
+          </h2>
+          <ul>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Asperiores error labore pariatur! Distinctio aperiam quia amet,
+              aspernatur accusamus libero soluta velit! Quasi dicta dolore ipsa!
+            </li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+              quas officiis corporis ipsam quaerat, quidem veritatis distinctio,
+              nobis rerum est tempore ducimus voluptatem repudiandae perferendis
+              hic, quam velit dignissimos deleniti quisquam reiciendis
+              architecto. Quia, necessitatibus!
+            </li>
+          </ul>
+          <p>3h ago</p>
+        </div>
+        <div class="photo-article">
+          <div>
+            <img src="http://placehold.jp/300x200.png" alt="" />
+            <span class="info-img">Lorem, ipsum dolor.</span>
+          </div>
+          <div>
+            <h2>Lorem ipsum dolor sit amet.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              suscipit, quis ipsum veritatis saepe blanditiis tempore. Ipsa quod
+              minima fugit qui, nemo sit ab labore vero eligendi tenetur eveniet
+              eius?
+            </p>
+            <p>Feb. 9</p>
+          </div>
+          <div>
+            <h2>Lorem ipsum dolor.</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+              suscipit, quis ipsum veritatis saqui, nemo sit ab labore vero
+              eligendi tenetur eveniet eius?
+            </p>
+            <p>11h ago</p>
+          </div>
+        </div>
+        <div id="secondary-news">
+          <div id="main-news">
+            <h5>A claim of extortion</h5>
+            <h3>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+              quod.
+            </h3>
+            <ul>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Deleniti tenetur non reprehenderit eum blanditiis maxime.
+              </li>
+              <li>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi
+                minima doloribus alias illo est. Ipsum?
+              </li>
+            </ul>
+            <span>7h ago</span>
+          </div>
         </div>
       </div>
-      <ul id="top-nav-center">
-        <li>English</li>
-        <li>Español</li>
-        <li>中文</li>
-      </ul>
-      <div id="top-nav-right">
-        <a href="" id="subscribe">SUBSCRIBE NOW</a>
-        <a href="" id="login">LOG IN</a>
-      </div>
-    </nav>
-    <div id="title-header">
-      <span id="date-nav">Sunday, February 3rd, 2019</span>
-      <img id="logo-nav" src="img/nyt-logo.png" alt="" />
-      <span id="today-nav">Today's paper</span>
     </div>
-    <div id="category-nav">
-      <ul>
-        <li>World</li>
-        <li>U.S.</li>
-        <li>Politics</li>
-        <li>N.Y.</li>
-        <li>Business</li>
-        <li>Opinion</li>
-        <li>Tech</li>
-        <li>Science</li>
-        <li>Health</li>
-        <li>Sports</li>
-        <li>Arts</li>
-        <li>Books</li>
-        <li>Style</li>
-        <li>Food</li>
-        <li>Travel</li>
-        <li>Magazine</li>
-        <li>T Magazine</li>
-        <li>Real Estate</li>
-        <li>Video</li>
-      </ul>
+    <div id="side-content">
+      <p>la partie de droite</p>
     </div>
-    <div id="flash-info-header">
-      <ul>
-        <li>
-          <div class="box1">
-            <img src="http://placehold.jp/55x55.png" alt="" />
-          </div>
-          <div class="box2">
-            <h5>titre1</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </li>
-        <li>
-          <div class="box1">
-            <img src="http://placehold.jp/55x55.png" alt="" />
-          </div>
-          <div class="box2">
-            <h5>titre1</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </li>
-        <li>
-          <div class="box1">
-            <img src="http://placehold.jp/55x55.png" alt="" />
-          </div>
-          <div class="box2">
-            <h5>titre1</h5>
-            <p>Lorem ipsum dolor sit amet.</p>
-          </div>
-        </li>
 
-        <li id="flash-info-dynamic">
-          <div id="stocks-wrapper">
-            <div class="stock-line"> S&P 500<span class="stock-values">-0.47% &#8595;</span></div>
-            <div class="stock-line">Dow <span class="stock-values">+0.68% &#8593;</span></div>
-            <div class="stock-line">Nasdaq <span class="stock-values">+0.74% &#8593;</span></div>
-          </div>
-          <!-- separator -->
-          <span class="vertical-separator"></span>
-          <div id="weather-wrapper">
-            <img src="http://placehold.jp/80x35.png" alt="" />
-            <p>Paris, France</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </header>
-
-  <img src="" alt="" />
-</body>
-
+    <img src="" alt="" />
+  </body>
 </html>
