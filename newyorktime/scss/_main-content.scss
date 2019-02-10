@@ -1,0 +1,33 @@
+#content {
+  display: flex;
+  padding: 25px 0;
+}
+#content-left {
+  width: 70%;
+}
+#content-right {
+  width: 30%;
+  background-color: bisque;
+}
+.main-news {
+  display: flex;
+  .articles-left {
+    flex: 1;
+    padding-right: 15px;
+    li {
+      list-style-type: disc;
+      margin: 5px 0;
+    }
+  }
+  .articles-right {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap;
+    .test {
+      width: 25%;
+    }
+    .photo-article {
+      min-width: 70%;
+    }
+  }
+}

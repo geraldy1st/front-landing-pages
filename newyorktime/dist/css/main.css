@@ -115,7 +115,7 @@
       flex: 1;
       align-items: center; }
       #flash-info-header ul li::after {
-        content: '';
+        content: "";
         border-left: 1.4px solid #c0c0c0bb;
         height: 93%;
         width: 0px;
@@ -159,6 +159,34 @@
   border-left: 1.4px solid #c0c0c0bb;
   height: 93%;
   width: 0px; }
+
+#content {
+  display: flex;
+  padding: 25px 0; }
+
+#content-left {
+  width: 70%; }
+
+#content-right {
+  width: 30%;
+  background-color: bisque; }
+
+.main-news {
+  display: flex; }
+  .main-news .articles-left {
+    flex: 1;
+    padding-right: 15px; }
+    .main-news .articles-left li {
+      list-style-type: disc;
+      margin: 5px 0; }
+  .main-news .articles-right {
+    flex: 2;
+    display: flex;
+    flex-wrap: wrap; }
+    .main-news .articles-right .test {
+      width: 25%; }
+    .main-news .articles-right .photo-article {
+      min-width: 70%; }
 
 * {
   margin: 0;
